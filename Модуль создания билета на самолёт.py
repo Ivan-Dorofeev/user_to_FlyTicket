@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
 
-
-# Заполнить все поля в билете на самолет.
-# Создать функцию, принимающую параметры: ФИО, откуда, куда, дата вылета,
-# и заполняющую ими шаблон билета Skillbox Airline.
-
 import os
 
 from PIL import Image, ImageDraw, ImageFont, ImageColor
@@ -27,6 +22,7 @@ def make_ticket(fio, from_, to, date):
     path_end = 'fly_ticket_1.png'
     im.save(path_end)
     print(f'Билет сохранён {path_end}')
+
 
 if __name__ == '__main__':
     make_ticket(fio='Дорофеев Иван Владимирович', from_='Москва', to='Рио-Де-Жанейро', date='29.05.2020')
